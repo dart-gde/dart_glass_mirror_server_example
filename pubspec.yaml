@@ -1,0 +1,14 @@
+name: dart_glass_mirror_server_example
+description: A sample command-line application
+environment:
+  sdk: '>=0.6.21'
+dependencies:
+  google_mirror_v1_api:
+    git: https://github.com/dartglass/dart_mirror_v1_api_client.git
+  google_plus_v1_api:
+    git: https://github.com/dartglass/dart_plus_v1_api_client.git
+  browser: any
+  crypto: any
+  fukiya: ">=0.1.10"
+  html5lib: any
+  logging: any
