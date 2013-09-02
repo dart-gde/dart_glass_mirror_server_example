@@ -190,6 +190,13 @@ void main() {
    */
   query("#disconnect").onClick.listen(disconnect);
   query("#insertItem").onClick.listen(insertItem);
+  query("#insertItemWithAction").onClick.listen((e) => print(e));
+  query("#insertContact").onClick.listen((e) => print(e));
+  query("#deleteContact").onClick.listen((e) => print(e));
+  query("#insertItemAllUsers").onClick.listen((e) => print(e));
+  query("#deleteTimelineItem").onClick.listen((e) => print(e));
+  query("#insertSubscription").onClick.listen((e) => print(e));
+  query("#deleteSubscription").onClick.listen((e) => print(e));
 
   if (query('[data-clientid="YOUR_CLIENT_ID"]') != null) {
     query("#gConnect").style.display = "none";

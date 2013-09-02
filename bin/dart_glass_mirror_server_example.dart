@@ -37,9 +37,45 @@ void main() {
   ..get('/people', getPeopleHandler)
   ..post('/disconnect', postDisconnectHandler)
   ..post('/insertItem', postMirrorInsertItem)
+  ..post('/insertItemWithAction', postMirrorInsertItemWithAction)
+  ..post('/insertContact', postMirrorInsertContact)
+  ..post('/deleteContact', postMirrorDeleteContact)
+  ..post('/insertItemAllUsers', postMirrorInsertItemAllUsers)
+  ..post('/deleteTimelineItem', postMirrorDeleteTimelineItem)
+  ..post('/insertSubscription', postMirrorInsertSubscription)
+  ..post('/deleteSubscription', postMirrorDeleteSubscription)
   ..staticFiles('./web')
   ..use(new FukiyaJsonParser())
   ..listen('127.0.0.1', 3333);
+}
+
+void postMirrorInsertContact(FukiyaContext context) {
+  serverLogger.fine("postMirrorInsertContact");
+}
+
+void postMirrorDeleteContact(FukiyaContext context) {
+  serverLogger.fine("postMirrorDeleteContact");
+}
+
+void postMirrorInsertItemAllUsers(FukiyaContext context) {
+  serverLogger.fine("postMirrorInsertItemAllUsers");
+}
+
+void postMirrorDeleteTimelineItem(FukiyaContext context) {
+  serverLogger.fine("postMirrorDeleteTimelineItem");
+}
+
+void postMirrorInsertSubscription(FukiyaContext context) {
+  serverLogger.fine("postMirrorInsertSubscription");
+}
+
+void postMirrorDeleteSubscription(FukiyaContext context) {
+  serverLogger.fine("postMirrorDeleteSubscription");
+}
+
+
+void postMirrorInsertItemWithAction(FukiyaContext context) {
+  serverLogger.fine("postMirrorInsertItemWithAction");
 }
 
 void postMirrorInsertItem(FukiyaContext context) {
