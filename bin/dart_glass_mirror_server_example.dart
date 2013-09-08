@@ -89,7 +89,7 @@ void postMirrorInsertItem(FukiyaContext context) {
 
   String html = """
 <article class="photo cover-only">  
-  <img src="http://www.glassfrogger.com/img/cartoon_frog_big.png" height="100%" width="100%">  
+  <img src="http://1.bp.blogspot.com/-RRgsWnwNGZ8/UNDmYGyNQHI/AAAAAAAABEo/7uIYbZW0jBE/s400/Pub.png" height="100%" width="100%">  
   <div class="photo-overlay"></div>  
   <section>    
     <p class="text-auto-size">
